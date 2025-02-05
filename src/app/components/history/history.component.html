@@ -1,0 +1,17 @@
+<p-table [value]="data()">
+  <ng-template #header>
+    <tr>
+      <th>Name</th>
+      <th>Created date</th>
+    </tr>
+  </ng-template>
+  <ng-template #body let-file>
+    <tr>
+      <td>{{ file.name }}</td>
+      <td>{{ file.date }}</td>
+      <td>
+        <button (click)="selectFile.emit(file.data)">Load</button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

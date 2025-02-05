@@ -1,0 +1,16 @@
+<div class="filters">
+  <div class="filters-toggle">
+    <p-toggleswitch inputId="alphabeticToggle"
+                    [ngModel]="filters()?.isAlphabeticSort"
+                    (onChange)="setFilter.emit(FILTERS_KEYS.isAlphabeticSort)"/>
+    <label class="filters-toggle-label"
+           for="alphabeticToggle">Alphabetic sorting</label>
+  </div>
+  <div class="filters-toggle">
+    <p-toggleswitch inputId="hideSmallValuesToggle"
+                    [ngModel]="filters()?.isHideSmallValues"
+                    (onChange)="setFilter.emit(FILTERS_KEYS.isHideSmallValues)"/>
+    <label class="filters-toggle-label"
+           for="hideSmallValuesToggle">Hide values below 30 </label>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+.base-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--p-fileupload-border-color);
+  border-radius: var(--p-fileupload-border-radius);
+  background: var(--p-fileupload-background);
+  color: var(--p-fileupload-color);
+  padding: var(--p-fileupload-header-padding);
+}
+
+.upload-form {
+  margin-bottom: 20px;
+}
+
+.charts {
+  position: relative;
+  margin-bottom: 20px;
+  &-wrapper {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.spinner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(102, 102, 102, 0.7);
+  z-index: 10;
+}

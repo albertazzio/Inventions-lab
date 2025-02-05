@@ -1,0 +1,8 @@
+<p-fileupload #fileUpload
+              mode="advanced"
+              chooseLabel="Choose"
+              accept=".json"
+              maxFileSize="5242880"
+              customUpload="true"
+              (onRemove)="clearFile()"
+              (uploadHandler)="uploadHandler($event)"/>
