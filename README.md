@@ -7,4 +7,10 @@
    npm start
 5. Приложение запустится на локально сервере
 6. Нужно открыть браузер и вставить в адресную строку:
-   http://localhost:4200 
+   http://localhost:4200
+7. Для загрузки использовать файлы типа(как в ТЗ):
+   [{"category": "A", "value": 30 },
+{ "category": "B", "value": 70 },
+{ "category": "C", "value": 50 },
+{ "category": "D", "value": 90 },
+{ "category": "E", "value": 20 }]
